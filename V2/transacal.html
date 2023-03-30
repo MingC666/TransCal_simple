@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Calculate</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="logout">
+            <a di="logout" href="/logout">Log Out</a>
+        </div>
+    </nav>
+
+    <div class="container" padding="10 px">
+        <div id="data">
+            <!-- Add Togo Price Button -->
+            <b>Dining: </b>
+            Price: <input type="number" id="amount" placeholder="0.00">
+            <button id="addTransactionBtn">Add</button>
+            <br>
+
+            <p id="demo">Start...</p>
+            <p id="a"></p>
+            <!-- SHOW Transactions -->
+
+        </div>
+
+
+        <!-- Display prices entries -->
+        <table id="totalDisplay" style="font-size: 30">
+            <tr>
+                <td>Total: <label id="totalLabel">0.00</label></td>
+                <td>Dining: <label id="diningTotalLabel">0.00</label></td>
+            </tr>
+        </table>
+
+
+        <div style="font-size: 20">
+            <table id="TransactionTable" style="float:left; width:10%">
+                <tr>
+                    <td>Dining</td>
+                </tr>
+                <tr>
+                    <td style="width:30%">Price</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+<script src="Ajax.js"></script>
+
+</body>
+</html>

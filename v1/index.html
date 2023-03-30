@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Daily Transaction</a></li>
+            <li><a href="#">Monthly Transaction</a></li>
+            <li><a href="#">Annually Transaction</a></li>
+        </ul>
+        <div class="logout">
+            <a href="#">Log Out</a>
+        </div>
+    </nav>
+
+    <!-- TransaCal  -->
+    <div class="container" padding="10 px">
+        <!-- Date choice -->
+        <div>
+            <div>日期: <input id="chosenDay" value="some date" /></div>
+        </div>
+
+        <!-- Price input section -->
+
+        <div class="input_section" id="data">
+            <!-- Add Dining Price Button -->
+            <div>
+                <b>堂吃: </b>
+                Price: <input type="number" id="diningPriceInput" placeholder="0.00">
+                <button class="myBtn" id="addDiningPriceBtn">添加</button>
+            </div>
+
+
+            <!-- Add Togo Price Button -->
+            <div><b>外卖: </b>
+                Price: <input type="number" id="togoPriceInput" placeholder="0.00">
+                <button class="myBtn" id="addTogoPriceBtn">添加</button>
+            </div>
+
+            <p id="demo">开始结算</p>
+            <p id="a"></p>
+            <!-- SHOW Transactions -->
+
+        </div>
+
+
+        <!-- Display prices entries -->
+        <table class="mytableTitle" id="totalDisplay" style="font-size: 30">
+            <tr>
+                <td>Total: <label id="totalLabel">0.00</label></td>
+                <td>堂吃: <label id="diningTotalLabel">0.00</label></td>
+                <td>外卖: <label id="togoTotalLabel">0.00</label></td>
+            </tr>
+        </table>
+        <!-- <div id="totalDisplay" style="font-size: 30" align:left>
+            Total: <label id="totalLabel">0.00</label>
+        </div> -->
+
+
+        <div style="font-size: 20">
+            <table id="diningTable" style="float:left; width:10%">
+                <tr>
+                    <td>堂吃</td>
+                </tr>
+                <tr>
+                    <td style="width:50%">Id</td>
+                    <td style="width:30%">Price</td>
+                </tr>
+            </table>
+
+            <table id="togoTable" style="float:center; width:10%">
+                <tr>
+                    <td>外卖</td>
+                </tr>
+                <tr>
+                    <td style="width:50%">Id</td>
+                    <td style="width:30%">Price</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <!-- <form method="post">
+        <input type="submit" name="button1" class="button" value="Button1" />
+
+        <input type="submit" name="button2" class="button" value="Button2" />
+    </form> -->
+
+</html>
